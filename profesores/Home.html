@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Inicio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+	<section class="full-box cover dashboard-sideBar">
+		<div class="full-box dashboard-sideBar-bg btn-menu-dashboard"></div>
+		<div class="full-box dashboard-sideBar-ct">
+			<!--Plataforma -->
+			<div class="full-box text-uppercase text-center text-titles dashboard-sideBar-title">
+				Encuentra a tu profesor <i class="zmdi zmdi-close btn-menu-dashboard visible-xs"></i>
+			</div>
+			<!-- Información del usuario -->
+			<div class="full-box dashboard-sideBar-UserInfo">
+				<figure class="full-box">
+					<img src="./images/avatar.jpg" alt="UserIcon">
+					<figcaption class="text-center text-titles">Nombre Usuario</figcaption>
+				</figure>
+			</div>
+			<!-- Menú de Opciones -->
+			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
+				<li>
+					<a href="home.html">
+						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> Inicio
+					</a>
+				</li>
+                
+				<li>
+					<a href="#!" class="btn-search">
+						<i class="zmdi zmdi-search"></i> Buscar
+					</a>
+				</li>
+                
+				<li>
+					<a href="#!" class="btn-sideBar-SubMenu">
+						<i class="zmdi zmdi-card zmdi-hc-fw"></i> Mis Cursos
+					</a>
+				</li>
+                
+                <li>
+					<a href="#!" class="btn-sideBar-SubMenu">
+						<i class="zmdi zmdi-account-add zmdi-hc-fw"></i> Mis Profesores
+					</a>
+				</li>
+                
+			</ul>
+		</div>
+	</section>
+
+	<!-- Contentenido barra de notificaciones-->
+	<section class="full-box dashboard-contentPage">
+		<nav class="full-box dashboard-Navbar">
+			<ul class="full-box list-unstyled text-right">
+                
+				<li>
+					<a href="#!" class="btn-modal-help">
+						<i class="zmdi zmdi-help-outline"></i>
+					</a>
+				</li>
+                
+                <li>
+					<a href="#!" class="btn-Notifications-area">
+						<i class="zmdi zmdi-notifications-none"></i>
+						<span class="badge">7</span>
+					</a>
+				</li>
+                
+                <li>
+						<a href="#!">
+							<i class="zmdi zmdi-settings"></i>
+						</a>
+				</li>
+                
+				<li>
+						<a href="#!" class="btn-exit-system">
+							<i class="zmdi zmdi-power"></i>
+						</a>
+				</li>
+                
+			</ul>
+		</nav>
+		<!-- Contenido de registros -->
+		<div class="container-fluid">
+			<div class="page-header">
+			  <h1 class="text-titles"></h1>
+			</div>
+		</div>
+		<div class="full-box text-center" style="padding: 30px 10px;">
+            
+			<article class="full-box tile">
+				<div class="full-box tile-title text-center text-titles text-uppercase">
+					Profesores
+				</div>
+				<div class="full-box tile-icon text-center">
+					<i class="zmdi zmdi-male-alt"></i>
+				</div>
+				<div class="full-box tile-number text-titles">
+					<p class="full-box">10</p>
+					<small>Registros</small>
+				</div>
+			</article>
+            
+			<article class="full-box tile">
+				<div class="full-box tile-title text-center text-titles text-uppercase">
+					Cursos
+				</div>
+				<div class="full-box tile-icon text-center">
+					<i class="zmdi zmdi-graduation-cap"></i>
+				</div>
+				<div class="full-box tile-number text-titles">
+					<p class="full-box">70</p>
+					<small>Registros</small>
+				</div>
+			</article>
+            
+			<article class="full-box tile">
+				<div class="full-box tile-title text-center text-titles text-uppercase">
+					Favoritos
+				</div>
+				<div class="full-box tile-icon text-center">
+					<i class="zmdi zmdi-favorite"></i>
+				</div>
+				<div class="full-box tile-number text-titles">
+					<p class="full-box">70</p>
+					<small>Register</small>
+				</div>
+			</article>
+		</div>
+	</section>
+
+	<!-- Ayuda -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="Dialog-Help">
+	  	<div class="modal-dialog" role="document">
+		    <div class="modal-content">
+			    <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			    	<h4 class="modal-title">Ayuda</h4>
+			    </div>
+			    <div class="modal-body">
+			        <p>
+			        	Para buscar un profesor, desplaza a la opción "Buscar", seleccionas la forma en cómo quieres buscar, por estado, ubicación, cursos.
+                        Selecciona alguna otra opción para ver los registros que hay en cada apartado, Profesores, Cursos o Favoritos.
+			        </p>
+			    </div>
+		      	<div class="modal-footer">
+		        	<button type="button" class="btn btn-primary btn-raised" data-dismiss="modal"><i class="zmdi zmdi-thumb-up"></i> Ok</button>
+		      	</div>
+		    </div>
+	  	</div>
+	</div>
+    	<!--====== Scripts -->
+	<script src="./js/jquery-3.1.1.min.js"></script>
+	<script src="./js/sweetalert2.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/material.min.js"></script>
+	<script src="./js/ripples.min.js"></script>
+	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script>
+		$.material.init();
+	</script>
+</body>
+</html>
